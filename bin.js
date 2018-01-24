@@ -30,12 +30,17 @@ if (argv.version === true || argv.v === true) {
 	process.exit(0)
 }
 
+const pify = require('pify')
+const level = require('level')
 const convert = require('.')
+
+const pLevel = pify(level)
 
 const srcDir = argv._[0]
 const dbDir = argv._[1]
 
-convert(srcDir, dbDir)
+pLevel(dbDir, {valueEncoding: 'json'})
+.then(db => convert(srcDir, db))
 .catch((err) => {
 	console.error(err)
 	process.exitCode = 1

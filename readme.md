@@ -42,9 +42,16 @@ Options:
 ### From JavaScript
 
 ```js
+const pify = require('pify')
+const level = require('level')
 const convert = require('gtfs-to-leveldb')
 
-convert('path-to-gtfs-dir', 'my-db.ldb')
+const pLevel = pify(level)
+
+pLevel('my-db.ldb', {valueEncoding: 'json'})
+.then((db) => {
+	convert('path-to-gtfs-dir', db)
+})
 .then((reader) => {
     return reader.route('123') // read route with ID `123`
 })

@@ -40,7 +40,7 @@
 	},
 	"scripts": {},
 	"engines": {
-		"node": ">=7.6"
+		"node": ">=6"
 	},
 	"license": "MIT"
 }
