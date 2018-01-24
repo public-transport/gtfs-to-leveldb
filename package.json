@@ -44,6 +44,7 @@
 	},
 	"devDependencies": {
 		"encoding-down": "^3.0.1",
+		"is-stream": "^1.1.0",
 		"levelup": "^2.0.1",
 		"memdown": "^1.4.1",
 		"tape": "^4.8.0",
