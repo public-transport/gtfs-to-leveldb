@@ -21,7 +21,11 @@
 	"homepage": "https://github.com/public-transport/gtfs-to-leveldb",
 	"repository": "public-transport/gtfs-to-leveldb",
 	"bugs": "https://github.com/public-transport/gtfs-to-leveldb/issues",
+	"license": "MIT",
 	"main": "index.js",
+	"engines": {
+		"node": ">=6"
+	},
 	"files": [
 		"index.js",
 		"bin.js",
@@ -38,9 +42,16 @@
 		"through2-map": "^3.0.0",
 		"unique-string": "^1.0.0"
 	},
-	"scripts": {},
-	"engines": {
-		"node": ">=6"
+	"devDependencies": {
+		"encoding-down": "^3.0.1",
+		"levelup": "^2.0.1",
+		"memdown": "^1.4.1",
+		"tape": "^4.8.0",
+		"tape-promise": "^2.0.1"
 	},
-	"license": "MIT"
+	"scripts": {
+		"sample-feed": "curl -s --fail 'https://developers.google.com/transit/gtfs/examples/sample-feed.zip' -o test/sample-feed.zip && unzip -qo test/sample-feed.zip -d test/sample-feed",
+		"test": "env NODE_ENV=test node test/index.js",
+		"prepublishOnly": "npm run sample-feed && npm test"
+	}
 }

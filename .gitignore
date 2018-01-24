@@ -8,3 +8,6 @@ dist
 
 yarn.lock
 package-lock.json
+
+/test/sample-feed.zip
+/test/sample-feed
