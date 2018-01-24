@@ -1,5 +1,7 @@
 # gtfs-to-leveldb
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/public-transport/gtfs-to-leveldb.svg)](https://greenkeeper.io/)
+
 **Import [GTFS](https://developers.google.com/transit/gtfs/) data into a [LevelDB](http://leveldb.org).**
 
 Currently, the following GTFS files are supported:
