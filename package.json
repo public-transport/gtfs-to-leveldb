@@ -1,7 +1,7 @@
 {
 	"name": "gtfs-to-leveldb",
 	"description": "Import GFTS data into a LevelDB. Library and CLI tool.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"bin": {
 		"gtfs-to-leveldb": "./bin.js"
 	},
