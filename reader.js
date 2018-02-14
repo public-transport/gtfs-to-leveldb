@@ -39,11 +39,18 @@ const createReader = (db) => ({
 	trips: pRange(db, dbToData.trips),
 	tripsStream: range(db, dbToData.trips),
 
-	tripStopTimes: range(db, dbToData.stop_times),
+	tripStopover: single(db, dbToData.stop_times),
+	tripStopovers: pRange(db, dbToData.stop_times),
+	tripStopoversStream: range(db, dbToData.stop_times),
 
 	// todo: rename these two
-	service: id => single(db, dbToData.calendar)(id).catch(() => null),
-	serviceCalendarDates: range(db, dbToData.calendar_dates)
+	service: single(db, dbToData.calendar),
+	services: pRange(db, dbToData.calendar),
+	servicesStream: range(db, dbToData.calendar),
+
+	serviceException: single(db, dbToData.calendar_dates),
+	serviceExceptions: pRange(db, dbToData.calendar_dates),
+	serviceExceptionsStream: range(db, dbToData.calendar_dates)
 })
 
 module.exports = createReader

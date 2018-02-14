@@ -41,16 +41,16 @@ test('sample feed: stop_times', async (t) => {
 	const db = createDb()
 	const reader = await convert(sampleDir, db)
 
-	const stopTimes = reader.tripStopTimes(city1Trip)
-	t.ok(isStream.readable(stopTimes))
+	const stopovers = reader.tripStopoversStream(city1Trip)
+	t.ok(isStream.readable(stopovers))
 
-	stopTimes.on('data', (stopTime) => {
-		t.ok('object' === typeof stopTime && !Array.isArray(stopTime))
-		t.equal(stopTime.trip_id, city1Trip)
-		t.equal(typeof stopTime.stop_id, 'string')
-		t.notOk(Number.isNaN(parseInt(stopTime.stop_sequence)))
-		t.equal(typeof stopTime.arrival_time, 'string')
-		t.equal(typeof stopTime.departure_time, 'string')
+	stopovers.on('data', (stopover) => {
+		t.ok('object' === typeof stopover && !Array.isArray(stopover))
+		t.equal(stopover.trip_id, city1Trip)
+		t.equal(typeof stopover.stop_id, 'string')
+		t.notOk(Number.isNaN(parseInt(stopover.stop_sequence)))
+		t.equal(typeof stopover.arrival_time, 'string')
+		t.equal(typeof stopover.departure_time, 'string')
 	})
 
 	t.on('error', t.ifError)
