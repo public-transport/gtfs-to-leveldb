@@ -1,14 +1,14 @@
 'use strict'
 
-const readFromFs = require('./lib/read-from-fs')
+const createReadFile = require('./lib/read-file')
 const importIntoDb = require('./lib/import')
 const createReader = require('./reader')
 
 const convert = (srcDir, db) => {
-	const gtfsStreams = readFromFs(srcDir)
+	const readFile = createReadFile(srcDir)
 
 	// todo: what if the data has already been imported?
-	return importIntoDb(gtfsStreams, db)
+	return importIntoDb(readFile, db)
 
 	.then(() => createReader(db))
 }
