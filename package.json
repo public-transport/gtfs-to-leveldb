@@ -48,7 +48,7 @@
 		"encoding-down": "^5.0.0",
 		"is-stream": "^1.1.0",
 		"levelup": "^2.0.1",
-		"memdown": "^2.0.0",
+		"memdown": "^3.0.0",
 		"tape": "^4.8.0",
 		"tape-promise": "^3.0.0"
 	},
