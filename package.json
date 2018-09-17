@@ -34,7 +34,7 @@
 	],
 	"dependencies": {
 		"get-stream": "^4.0.0",
-		"gtfs-utils": "^0.5.0",
+		"gtfs-utils": "^0.6.0",
 		"level": "^3.0.0",
 		"mri": "^1.1.0",
 		"p-settle": "^2.0.0",
