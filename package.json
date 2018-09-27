@@ -50,7 +50,7 @@
 		"levelup": "^3.0.0",
 		"memdown": "^3.0.0",
 		"tape": "^4.8.0",
-		"tape-promise": "^3.0.0"
+		"tape-promise": "^4.0.0"
 	},
 	"scripts": {
 		"sample-feed": "curl -s --fail 'https://developers.google.com/transit/gtfs/examples/sample-feed.zip' -o test/sample-feed.zip && unzip -qo test/sample-feed.zip -d test/sample-feed",
