@@ -38,7 +38,7 @@
 		"level": "^3.0.0",
 		"mri": "^1.1.0",
 		"p-settle": "^2.0.0",
-		"pify": "^4.0.0",
+		"pify": "^4.0.1",
 		"pump": "^3.0.0",
 		"strip-bom-stream": "^3.0.0",
 		"through2-map": "^3.0.0",
