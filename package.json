@@ -45,7 +45,7 @@
 		"unique-string": "^1.0.0"
 	},
 	"devDependencies": {
-		"encoding-down": "^5.0.0",
+		"encoding-down": "^6.0.0",
 		"is-stream": "^1.1.0",
 		"levelup": "^3.0.0",
 		"memdown": "^3.0.0",
