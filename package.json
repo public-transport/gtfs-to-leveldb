@@ -33,7 +33,7 @@
 		"lib"
 	],
 	"dependencies": {
-		"get-stream": "^4.0.0",
+		"get-stream": "^5.0.0",
 		"gtfs-utils": "^0.6.0",
 		"level": "^3.0.0",
 		"mri": "^1.1.0",
