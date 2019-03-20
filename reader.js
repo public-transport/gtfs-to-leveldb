@@ -50,7 +50,11 @@ const createReader = (db) => ({
 
 	serviceException: single(db, dbToData.calendar_dates),
 	serviceExceptions: pRange(db, dbToData.calendar_dates),
-	serviceExceptionsStream: range(db, dbToData.calendar_dates)
+	serviceExceptionsStream: range(db, dbToData.calendar_dates),
+
+	shape: single(db, dbToData.shapes),
+	shapes: pRange(db, dbToData.shapes),
+	shapesStream: range(db, dbToData.shapes)
 })
 
 module.exports = createReader
