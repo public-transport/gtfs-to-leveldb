@@ -11,6 +11,7 @@ Currently, the following GTFS files are supported:
 - `stop_times.txt` **required**
 - `calendar.txt` *optional*, **required** if `calendar_dates.txt` is not provided
 - `calendar_dates.txt` *optional*, **required** if `calendar.txt` is not provided
+- `shapes.txt` *optional*
 
 [![npm version](https://img.shields.io/npm/v/gtfs-to-leveldb.svg)](https://www.npmjs.com/package/gtfs-to-leveldb)
 [![license](https://img.shields.io/github/license/public-transport/gtfs-to-leveldb.svg?style=flat)](LICENSE)
