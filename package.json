@@ -40,7 +40,7 @@
 		"p-settle": "^2.0.0",
 		"pify": "^4.0.0",
 		"pump": "^3.0.0",
-		"strip-bom-stream": "^3.0.0",
+		"strip-bom-stream": "^4.0.0",
 		"through2-map": "^3.0.0",
 		"unique-string": "^1.0.0"
 	},
