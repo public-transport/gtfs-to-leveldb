@@ -1,7 +1,7 @@
 {
 	"name": "gtfs-to-leveldb",
 	"description": "Import GFTS data into a LevelDB. Library and CLI tool.",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"bin": {
 		"gtfs-to-leveldb": "./bin.js"
 	},
@@ -24,7 +24,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"engines": {
-		"node": ">=6"
+		"node": ">=8.6.0"
 	},
 	"files": [
 		"index.js",
@@ -33,7 +33,7 @@
 		"lib"
 	],
 	"dependencies": {
-		"get-stream": "^4.0.0",
+		"get-stream": "^5.1.0",
 		"gtfs-utils": "^1.0.0",
 		"level": "^6.0.0",
 		"mri": "^1.1.0",
