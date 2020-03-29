@@ -37,7 +37,7 @@
 		"gtfs-utils": "^1.0.0",
 		"level": "^6.0.0",
 		"mri": "^1.1.0",
-		"p-settle": "^3.0.0",
+		"p-settle": "^4.0.1",
 		"pify": "^4.0.0",
 		"pump": "^3.0.0",
 		"strip-bom-stream": "^4.0.0",
